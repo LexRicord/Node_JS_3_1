@@ -1,0 +1,13 @@
+{
+    "_id" : ObjectId("57d28452ed5d4d54e868702f"),
+    "pulpit": "ИСиТ",
+    "pulpit_name": "Информационных систем и технологий",
+    "faculty": "ИТ"
+} 
+
+{
+    "_id" : ObjectId("57d28452ed5d4d54e8687081"),
+    "pulpit": "ПИ",
+    "pulpit_name": "Программной инженерии",
+    "faculty": "ИТ"
+} 

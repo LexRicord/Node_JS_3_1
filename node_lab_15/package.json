@@ -1,0 +1,7 @@
+{
+  "name": "node_lab_15_2",
+  "version": "1.0.0",
+  "dependencies": {
+    "mongodb": "^4.13.0"
+  }
+}

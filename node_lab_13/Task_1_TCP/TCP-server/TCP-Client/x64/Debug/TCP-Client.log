@@ -1,0 +1,7 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(514,5): warning MSB8028: промежуточный каталог (x64\Debug\) содержит файлы, которые используются совместно с другим проектом (TCP-Client.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  Error.cpp
+  stdafx.cpp
+  TCP_client.cpp
+D:\repos\Node_JS_3_1\node_lab_13\Task_1_TCP\TCP-server\TCP-Client\TCP_client.cpp(55,6): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  Создание кода...
+  TCP-Client.vcxproj -> D:\repos\Node_JS_3_1\node_lab_13\Task_1_TCP\TCP-server\x64\Debug\TCP_client.exe

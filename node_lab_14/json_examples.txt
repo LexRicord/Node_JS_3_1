@@ -1,0 +1,28 @@
+{
+        "PULPIT": "Тест",
+        "PULPIT_NAME": "Закручивание хвостов ослам ",
+        "FACULTY": "ИДиП"
+}
+
+{
+        "FACULTY": "БИиП",
+        "FACULTY_NAME": "Издателькое дело и полиграфия"
+} 
+
+{
+        "AUDITORIUM": "213",
+        "AUDITORIUM_NAME": 213
+        "AUDITORIUM_CAPACITY": 90,
+        "AUDITORIUM_TYPE": "ЛК"
+}
+
+{
+        "SUBJECT": "БLL",
+        "SUBJECT_NAME": "Базы данных",
+        "PULPIT": "ИСиТ"
+}
+
+{
+        "AUDITORIUM_TYPE": "ЛБ-X2",
+        "AUDITORIUM_TYPENAME": "Химическая лаборатория"
+}

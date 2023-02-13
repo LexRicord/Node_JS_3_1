@@ -1,0 +1,4 @@
+﻿  UDP-server.cpp
+D:\repos\Node_JS_3_1\node_lab_13\Task_5_UDP\UDP-server\UDP-server\UDP-server.cpp(73,9): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\repos\Node_JS_3_1\node_lab_13\Task_5_UDP\UDP-server\UDP-server\UDP-server.cpp(27,9): warning C4101: cS: неиспользованная локальная переменная
+  UDP-server.vcxproj -> D:\repos\Node_JS_3_1\node_lab_13\Task_5_UDP\UDP-server\x64\Debug\UDP-server.exe

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>node_lab_10_task01</title>
+</head>
+<body style="font-family:'Times New Roman';">
+    <h1>node_lab_10</h1>
+    <h2 id="text"></h2>
+    <button onclick="startWS()">StartWS</button>
+    <script>
+        let k = 0;
+        let text = document.getElementById("text");
+        function startWS() {
+            let socket = new WebSocket('ws:/localhost:4000/wsserver');
+            socket.onopen = () => { console.log('Socket.onopen is used.');
+                setInterval(() => { socket.send(`10_task1 client: ${++k}`); }, 3000);
+            };
+
+            socket.onclose = (e) => { console.log('Socket.onclose is used.', e); };
+            socket.onmessage = (e) => { 
+                text.insertAdjacentHTML('beforeend',`<p>${e.data}</p>`)
+                console.log('Socket.onmessage is used', e.data); };
+            socket.onerror = function(error) { alert('Error: ' + error.message); };
+        }
+    </script>
+</body>
+</html>

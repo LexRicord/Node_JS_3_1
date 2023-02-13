@@ -1,0 +1,474 @@
+{
+	"info": {
+		"_postman_id": "ded60a6a-6839-4366-bb27-f15a73637201",
+		"name": "lab16",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23247807"
+	},
+	"item": [
+		{
+			"name": "getFaculties_one",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query {\r\n    getFaculties(FACULTY: \"ИДиП\") {\r\n        FACULTY\r\n        FACULTY_NAME\r\n    }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFaculties_all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query {\r\n    getFaculties(FACULTY: \"\") {\r\n        FACULTY\r\n        FACULTY_NAME\r\n    }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTeachers_one",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query {\r\n    getTeachers(TEACHER: \"БЗБРДВ\") {\r\n        TEACHER\r\n        TEACHER_NAME\r\n        PULPIT\r\n    }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTeachers_all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query {\r\n    getTeachers(TEACHER: \"\") {\r\n        TEACHER\r\n        TEACHER_NAME\r\n        PULPIT\r\n    }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPulpits_all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query {\r\n    getPulpits(PULPIT: \"\") {\r\n        PULPIT\r\n        PULPIT_NAME\r\n        FACULTY\r\n    }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPulpits_one",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query {\r\n    getPulpits(PULPIT: \"ИСиТ\") {\r\n        PULPIT\r\n        PULPIT_NAME\r\n        FACULTY\r\n    }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSubjects_all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query {\r\n    getSubjects(SUBJECT: \"\") {\r\n        SUBJECT\r\n        SUBJECT_NAME\r\n        PULPIT\r\n    }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSubjects_one",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query {\r\n    getSubjects(SUBJECT: \"БД\") {\r\n        SUBJECT\r\n        SUBJECT_NAME\r\n        PULPIT\r\n    }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTeachersByFaculty",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query ($FAC: String!){\r\n    getFaculties(FACULTY: $FAC){\r\n        FACULTY\r\n        FACULTY_NAME\r\n    }\r\n    getTeachersByFaculty(FACULTY: $FAC) {\r\n        TEACHERS{\r\n            TEACHER\r\n            TEACHER_NAME\r\n        }\r\n    }\r\n}",
+						"variables": "{\r\n    \"FAC\":\"ТОВ\",\r\n    \"FAC_ERROR\":\"\"\r\n}"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSubjectsByFaculties",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query ($FAC: String!){\r\n    getFaculties(FACULTY: $FAC){\r\n        FACULTY\r\n        FACULTY_NAME\r\n    }\r\n    getSubjectsByFaculties(FACULTY: $FAC) {\r\n        FACULTY\r\n        SUBJECTS{\r\n            SUBJECT\r\n            SUBJECT_NAME\r\n            PULPIT\r\n        }\r\n    }\r\n}",
+						"variables": "{\r\n    \"FAC\":\"ТОВ\",\r\n    \"FAC_ERROR\":\"\"\r\n}"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "setFaculty",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation ($FAC:String!){\r\n    setFaculty(FACULTY: $FAC, FACULTY_NAME:\"ТЕСТ3\") {\r\n        FACULTY\r\n        FACULTY_NAME\r\n    }\r\n}",
+						"variables": "{\r\n    \"FAC\":\"Тест4\"\r\n}"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "setPulpits",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation ($PULP:String!,$FAC:String!){\r\n    setPulpit(PULPIT: $PULP,PULPIT_NAME:\"Тест3\",FACULTY:$FAC) {\r\n        PULPIT\r\n        PULPIT_NAME\r\n        FACULTY\r\n    }\r\n}",
+						"variables": "{\r\n    \"PULP\":\"Тест2\",\r\n    \"FAC\":\"\"\r\n}"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "setSubject",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation ($SUBJ:String!,$PULP:String!){\r\n    setSubject(SUBJECT: $SUBJ,SUBJECT_NAME:\"Тест1\",PULPIT:$PULP) {\r\n        SUBJECT\r\n        SUBJECT_NAME\r\n        PULPIT\r\n    }\r\n}",
+						"variables": "{\r\n    \"SUBJ\":\"Тест1\",\r\n    \"PULP\":\"ИСиТ\"\r\n}"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "setTeacher",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation ($TCH:String!,$PULP:String!) {\r\n    setTeacher(TEACHER: $TCH,TEACHER_NAME: \"Тест3\",PULPIT: $PULP) {\r\n        TEACHER\r\n        TEACHER_NAME\r\n        PULPIT\r\n    }\r\n}",
+						"variables": "{\r\n    \"TCH\":\"УЧТЛТСТ\",\r\n    \"PULP\":\"ИСиТ\"\r\n}"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delFaculty",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation {\r\n    delFaculty(FACULTY: \"Тест4\") \r\n}",
+						"variables": "{\r\n    \"FAC\":\"Тест4\"\r\n}"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delPulpit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation ($PULPIT:String!){\r\n    delPulpit(PULPIT: $PULPIT) \r\n}",
+						"variables": "{\r\n    \"PULPIT\":\"Тест2\"\r\n}"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": [
+				{
+					"name": "delPulpit",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "mutation ($PULPIT:String!){\r\n    delPulpit(PULPIT: $PULPIT) {\r\n        PULPIT\r\n        PULPIT_NAME\r\n        FACULTY\r\n    }\r\n}",
+								"variables": "{\r\n    \"PULPIT\":\"Тест2\"\r\n}"
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000"
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Feb 2023 07:30:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "delSubjects",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation ($SUBJ:String!){\r\n    delSubject(SUBJECT: $SUBJ) \r\n}",
+						"variables": "{\r\n    \"SUBJ\":\"Тест1\"\r\n}"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delTeacher",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation ($TCH:String!){\r\n    delTeacher(TEACHER: $TCH) \r\n}",
+						"variables": "{\r\n    \"TCH\":\"УЧТЛТСТ\"\r\n}"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		}
+	]
+}

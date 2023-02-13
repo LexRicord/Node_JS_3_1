@@ -1,0 +1,540 @@
+{
+	"info": {
+		"_postman_id": "747b17ca-646c-41a5-ba92-928859804f8f",
+		"name": "lab14",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23247807"
+	},
+	"item": [
+		{
+			"name": "1_html_file",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2_api_faculties",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/faculties",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"faculties"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3_api_pulpits",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/pulpits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pulpits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4_api_subjects",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/subjects",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"subjects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5_api_auditoriumstypes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/auditoriumtypes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auditoriumtypes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6_api_auditoriums",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/auditoriums",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auditoriums"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7_api_pulpits_by_faculties",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/faculty/ТОВ/pulpits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"faculty",
+						"ТОВ",
+						"pulpits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8_auditoriums_by_audit_types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/auditoriumtypes/ЛБ-К/auditoriums/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auditoriumtypes",
+						"ЛБ-К",
+						"auditoriums",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "9_api_pulpits",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"PULPIT\": \"Тест\",\r\n        \"PULPIT_NAME\": \"Закручивание хвостов ослам \",\r\n        \"FACULTY\": \"ИДиП\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/pulpits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pulpits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10_api_subjects",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"SUBJECT\": \"АРБ\",\r\n    \"SUBJECT_NAME\": \"Арбузное Шлемостроение\",\r\n    \"PULPIT\": \"ИСиТ\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/subjects",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"subjects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "11_api_auditoriumstypes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"AUDITORIUM_TYPE\": \"АР-СК\",\r\n        \"AUDITORIUM_TYPENAME\": \"Арбузный Станок\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/auditoriumtypes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auditoriumtypes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "12_api_auditoriums",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"AUDITORIUM\": \"213\",\r\n        \"AUDITORIUM_NAME\": \"213\",\r\n        \"AUDITORIUM_CAPACITY\": 90,\r\n        \"AUDITORIUM_TYPE\": \"ЛК\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/auditoriums",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auditoriums"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "13_api_faculties",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"FACULTY\": \"\",\r\n        \"FACULTY_NAME\": \"Планкостоятельный v2\"\r\n} ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/faculties",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"faculties"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "14_api_pulpits",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"PULPIT\": \"Тест\",\r\n        \"PULPIT_NAME\": \"Закручивание хвостов ослам v2\",\r\n        \"FACULTY\": \"ТОВ\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/pulpits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pulpits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "15_api_subjects",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"SUBJECT\": \"АРБ\",\r\n    \"SUBJECT_NAME\": \"Арбузное Шлемостроение V3\",\r\n    \"PULPIT\": \"ИСиТ\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/subjects",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"subjects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "16_api_auditoriumstypes",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"AUDITORIUM_TYPE\": \"АР-СК\",\r\n        \"AUDITORIUM_TYPENAME\": \"Арбузный Станок V3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/auditoriumtypes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auditoriumtypes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "17_api_auditoriums",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"AUDITORIUM\": \"213\",\r\n        \"AUDITORIUM_NAME\": \"213213213\",\r\n        \"AUDITORIUM_CAPACITY\": 90,\r\n        \"AUDITORIUM_TYPE\": \"ЛК\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/auditoriums",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auditoriums"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "18_api_faculties",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/faculties/ИДиП",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"faculties",
+						"ИДиП"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "19_api_pulpits",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/pulpits/Тест",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pulpits",
+						"Тест"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "20_api_subjects",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/subjects/АРБ",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"subjects",
+						"АРБ"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "21_api_auditoriumstypes",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/auditoriumtypes/АР-СК",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auditoriumtypes",
+						"АР-СК"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "22_api_auditoriums",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/auditoriums/213",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auditoriums",
+						"213"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

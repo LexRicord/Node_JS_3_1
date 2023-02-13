@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "8a348dbe-6510-4e51-9446-6881bfd720a3",
+		"name": "lab4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23247807"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/api/db?idValue=5&nameValue='Valuev Semyon'&bdayValue='2003-03-30'",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"{\r",
+							"    id:5 \r",
+							"    name:'valuev semyon'\r",
+							"    bday:2003-03-3\r",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/db?idValue=5&nameValue='Valuev Semyon'&bdayValue='2003-03-30'",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"db"
+					],
+					"query": [
+						{
+							"key": "idValue",
+							"value": "5"
+						},
+						{
+							"key": "nameValue",
+							"value": "'Valuev Semyon'"
+						},
+						{
+							"key": "bdayValue",
+							"value": "'2003-03-30'"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "a5ec49b1-ca95-4f3b-a004-728374403161",
+		"name": "lab9",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23247807"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/09_01",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/09_01",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"09_01"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/09_02?x=3&y=4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/09_02?x=3&y=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"09_02"
+					],
+					"query": [
+						{
+							"key": "x",
+							"value": "3"
+						},
+						{
+							"key": "y",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/09_03?x=3&y=4&s=Yeah",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/09_03",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"09_03"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/09_04",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"__comment\": \"request: lab 09_task4\",\r\n        \"x\": 3,\r\n        \"y\": 11,\r\n        \"s\": \"Message\",\r\n        \"m\": [\"a\", \"b\", \"c\", \"d\", \"e\", \"f\"],\r\n        \"o\": {\"surname\": \"Herman\", \"name\": \"Alexander\"}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/09_04",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"09_04"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000//09_06_07",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/repos/Node_JS_3_1/node_lab_9/MyFile2.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/09_06_07",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"09_06_07"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000//09_06_07",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/repos/Node_JS_3_1/node_lab_9/MyFile.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/09_06_07",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"",
+						"09_06_07"
+					],
+					"query": [
+						{
+							"key": "file",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

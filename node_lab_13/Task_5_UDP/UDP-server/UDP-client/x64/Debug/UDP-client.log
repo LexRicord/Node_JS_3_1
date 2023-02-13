@@ -1,0 +1,7 @@
+﻿  Error.cpp
+  stdafx.cpp
+  UDP-client.cpp
+D:\repos\Node_JS_3_1\node_lab_13\Task_5_UDP\UDP-server\UDP-client\UDP-client.cpp(56,8): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\repos\Node_JS_3_1\node_lab_13\Task_5_UDP\UDP-server\UDP-client\UDP-client.cpp(67,7): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  Создание кода...
+  UDP-client.vcxproj -> D:\repos\Node_JS_3_1\node_lab_13\Task_5_UDP\UDP-server\x64\Debug\UDP-client.exe

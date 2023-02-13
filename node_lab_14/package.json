@@ -1,0 +1,8 @@
+{
+  "name": "node_lab_14_2",
+  "version": "1.0.0",
+  "dependencies": {
+    "mssql": "^9.1.1",
+    "utf8": "^3.0.0"
+  }
+}
