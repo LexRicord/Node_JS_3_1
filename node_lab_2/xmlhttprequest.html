@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Node.js_2 Task 4</title>
+    <style type="text/css">
+        * {
+            font-size: 40px;
+			color: #54020c;
+            background-color: #eed8ad;
+            text-align: center;
+            font-family: 'Times New Roman', Geneva, Verdana, sans-serif;
+		}
+    </style>
+</head>
+
+<body>
+    <h1 id="hh1">Out my name :</h1>
+    <h2 id="name" style="color: #a8071a;"></h2>
+
+    <script>
+        let el = document.getElementById('name');
+        let xhr = new XMLHttpRequest();
+        xhr.open('GET', 'http://localhost:5000/api/name', true);
+        xhr.onload = function (e) {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    el.append(xhr.responseText);
+                } else {
+                    console.error(xhr.statusText);
+                    console.log('Something went wrong');
+                }
+            }
+        }
+        xhr.send();
+    </script>
+</body>
+</html>
