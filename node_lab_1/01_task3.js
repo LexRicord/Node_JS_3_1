@@ -9,9 +9,9 @@ let head = (request) => {
 
 http.createServer(function(request, response) {
     let body = '';
-    request.on('data', str => {
+    request.on('dat', str => {
         body += str;
-        console.log('data', body);
+        console.log('dat', body);
     });
 
     response.writeHead(200, {'Content-Type': 'text/html; charset=utf-8'});

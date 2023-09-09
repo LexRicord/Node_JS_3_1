@@ -6,28 +6,15 @@
     <style type="text/css">
         * {
             font-size: 35px;
-			color: #560202;
+            color: #560202;
             background-color: #eed8ad;
             text-align: center;
             font-family: 'Times New Roman', Geneva, Verdana, sans-serif;
-		}
+        }
     </style>
 </head>
-
 <body>
     <h1>Fetch-using out of name</h1>
-    <h2 id="name" style="color: #b4080f;"></h2>
-    <script async src="02_task5.js" >
-        let url = 'http://localhost:5000/api/name';
-        let response = await fetch(url);
-        let elem = document.getElementById('name');
-        if (response.ok){
-             fetch(url)
-                .then(response => response.text())
-                .then(text => elem.append(text));
-        } else {
-            alert("Ошибка HTTP: " + response.status);
-        }
-    </script>
+    <h2 id="userData" style="color: #b4080f;"><!-- USER_DATA_PLACEHOLDER --></h2>
 </body>
 </html>
